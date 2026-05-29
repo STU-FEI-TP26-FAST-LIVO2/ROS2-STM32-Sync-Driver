@@ -1,6 +1,8 @@
 # ROS2-STM32-Sync-Driver
 
-Hlavnou úlohou tohto uzla je zber dát z IMU, ktorá je pripojená k STM32 BluePill. Dáta sú prijímané v binárnej forme cez UART a následne spracované týmto uzlom do vhodného formátu a posielané na topic /imu.
+Hlavnou úlohou tohto uzla je zber dát z IMU, ktorá je pripojená k STM32 BluePill. Dáta sú prijímané v binárnej forme cez UART a následne spracované týmto uzlom do vhodného formátu a posielané na topic /imu.  
+
+Tento uzol je súčasťou [FAST-LIVO2 workspace-u](https://github.com/STU-FEI-TP26-FAST-LIVO2/ROS2-FAST-LIVO2-WS).
 ## Spustenie uzla
 Po pripojení správne zapojeného STM32 BluePill spolu s IMU k Jetsonu je možné spustiť uzol nasledovne
 ```bash
@@ -15,3 +17,9 @@ Dáta z IMU môžu byť následne zobrazené takto
 ```
 ros2 topic echo /imu
 ```
+## Spustenie uzla v rámci celého systému
+V prípade spustenia celého systému (FAST-LIVO2 spolu s LiDARom, IMU a kamerou) príkazom
+```bash
+./run_all.sh
+```
+je spustenie tohto uzla súčasťou spustenia celého systému.
