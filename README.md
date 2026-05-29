@@ -1,3 +1,5 @@
+# ROS2-STM32-Sync-Driver
+
 Hlavnou úlohou tohto uzla je zber dát z IMU, ktorá je pripojená k STM32 BluePill. Dáta sú prijímané v binárnej forme cez UART a následne spracované týmto uzlom do vhodného formátu a posielané na topic /imu.
 ## Spustenie uzla
 Po pripojení správne zapojeného STM32 BluePill spolu s IMU k Jetsonu je možné spustiť uzol nasledovne
